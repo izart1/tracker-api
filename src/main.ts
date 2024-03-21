@@ -11,7 +11,9 @@ async function bootstrap() {
 		origin: [
 			'http://localhost:3000',
 			'http://31.129.42.198:3000',
-			'http://31.129.42.198'
+			'http://31.129.42.198:3000/',
+			'http://31.129.42.198',
+			'http://31.129.42.198/'
 		],
 		credentials: true,
 		exposedHeaders: 'set-cookie'
