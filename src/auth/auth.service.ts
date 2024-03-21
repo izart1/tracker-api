@@ -107,7 +107,7 @@ export class AuthService {
 			httpOnly: true,
 			domain: 'localhost',
 			expires: new Date(0),
-			secure: true,
+			secure: false,
 			// lax if production
 			sameSite: 'none'
 		})
