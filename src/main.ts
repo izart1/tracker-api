@@ -10,8 +10,11 @@ async function bootstrap() {
 	app.enableCors({
 		origin: [
 			'http://localhost:3000',
-			'http://31.129.56.134:3000',
-			'http://31.129.56.134',
+			'https://localhost:3000',
+			'https://31.129.56.134:3000',
+			'https://31.129.56.134:3000',
+			'https://31.129.56.134',
+			'https://31.129.56.134',
 			'http://gogogox.ru',
 			'https://gogogox.ru',
 			'http://www.gogogox.ru',

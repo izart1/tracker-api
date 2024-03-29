@@ -96,7 +96,7 @@ export class AuthService {
 			httpOnly: true,
 			domain: '31.129.56.134',
 			expires: expiresIn,
-			secure: false,
+			secure: true,
 			// lax if production
 			sameSite: 'none'
 		})
@@ -107,7 +107,7 @@ export class AuthService {
 			httpOnly: true,
 			domain: '31.129.56.134',
 			expires: new Date(0),
-			secure: false,
+			secure: true,
 			// lax if production
 			sameSite: 'none'
 		})
