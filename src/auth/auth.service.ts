@@ -99,7 +99,7 @@ export class AuthService {
 			secure: true,
 			// lax if production
 			sameSite: 'lax',
-			path: '/api/auth/login'
+			path: '/auth'
 		})
 	}
 
@@ -111,7 +111,7 @@ export class AuthService {
 			secure: true,
 			// lax if production
 			sameSite: 'lax',
-			path: '/api/auth/login'
+			path: '/auth'
 		})
 	}
 }
