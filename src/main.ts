@@ -11,7 +11,11 @@ async function bootstrap() {
 		origin: [
 			'http://localhost:3000',
 			'http://31.129.56.134:3000',
-			'http://31.129.56.134'
+			'http://31.129.56.134',
+			'http://gogogox.ru',
+			'https://gogogox.ru',
+			'http://www.gogogox.ru',
+			'https://www.gogogox.ru'
 		],
 		credentials: true,
 		exposedHeaders: 'set-cookie'
