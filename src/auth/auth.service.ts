@@ -94,22 +94,24 @@ export class AuthService {
 
 		res.cookie(this.REFRESH_TOKEN_NAME, refreshToken, {
 			httpOnly: true,
-			domain: 'https://gogogox.ru/api/auth/login',
+			domain: 'https://gogogox.ru',
 			expires: expiresIn,
 			secure: true,
 			// lax if production
-			sameSite: 'lax'
+			sameSite: 'lax',
+			path: '/api/auth/login'
 		})
 	}
 
 	removeRefreshTokenFromResponse(res: Response) {
 		res.cookie(this.REFRESH_TOKEN_NAME, '', {
 			httpOnly: true,
-			domain: 'https://gogogox.ru/api/auth/login',
+			domain: 'https://gogogox.ru',
 			expires: new Date(0),
 			secure: true,
 			// lax if production
-			sameSite: 'lax'
+			sameSite: 'lax',
+			path: '/api/auth/login'
 		})
 	}
 }
